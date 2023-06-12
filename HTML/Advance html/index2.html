@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <template id="parentTemplate">
+      <h1>Parent Template</h1>
+      <template id="chlidTemplate">
+        <h1>Chlid Template</h1>
+      </template>
+    </template>
+  </body>
+  <script>
+    const parentTemplate = document.getElementById("parentTemplate");
+    const parentContent = parentTemplate.content.cloneNode(true);
+    const chlidTemplate = parentContent.querySelector("#chlidTemplate");
+    const chlidContent = chlidTemplate.content.cloneNode(true);    
+    parentContent.appendChild(chlidContent);
+    document.body.appendChild(parentContent);
+  </script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <template id="myTemplate">
+      <h2>Hell World</h2>
+      <p>this is a pg</p>
+    </template>
+  </body>
+  <script>
+    const data = {
+      title: "this is a title",
+      descripation: "This is a description",
+    };
+    const template = document.getElementById("myTemplate");
+    const content = template.content.cloneNode(true);
+    content.querySelector("h2").innerHTML = data.title;
+    content.querySelector("p").innerHTML = data.descripation;
+    document.body.appendChild(content);
+  </script>
+</html>

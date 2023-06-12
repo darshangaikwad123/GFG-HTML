@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action="/action.js"
+      method="post"
+      id="myfrom"
+      target="_blank"
+      autocomplete="on"
+      enctype="multipart/form-data"
+    >
+      <input type="text" name="email" id="" placeholder="email" />
+      <input type="password" name="password" id="" />
+      <input type="submit" value="submit" />
+      <label for="">what is your age</label>
+      <select name="userage" id="" size="1">
+        <option value="1">1</option>
+        <option value="2" selected>2</option>
+        <option value="3">3</option>
+      </select>
+      <textarea
+        name="msg"
+        id=""
+        style="
+          max-width: 500px;
+          max-height: 400px;
+          min-width: 100px;
+          min-height: 200px;
+        "
+      ></textarea>
+      <button type="button" onclick="alert('darshan')">submit</button>
+    </form>
+    <fieldset>
+      <legend>Login</legend>
+      <input type="text" name="email" id="" placeholder="email" list="myname" />
+      <datalist id="myname">
+        <option value="">Darshan</option>
+        <option value="">Gaikwad</option>
+      </datalist>
+
+      <input type="password" name="password" id="" />
+      <input
+        type="submit"
+        value="submit"
+        enctype="multipart/form-data"
+        formaction="./someothertype"
+        formtarget="_self"
+      />
+    </fieldset>
+    <input type="button" value="submit" form="myfrom" />
+  </body>
+</html>

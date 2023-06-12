@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th {
+      color: aqua;
+      border: 1px solid blue;
+    }
+    td {
+      color: brown;
+      font-size: medium;
+      text-align: center;
+      border: 1px solid blue;
+      padding: 10px;
+    }
+    thead {
+      background-color: rgb(238, 232, 224);
+    }
+  </style>
+  <body>
+    <table>
+      <caption>
+        MY table
+      </caption>
+      <thead>
+        <tr>
+          <th>Age</th>
+          <th>First name</th>
+          <th>Last name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">25</td>
+          <td colspan="2">Darshan</td>
+        </tr>
+        <tr>
+          <td>Darshan</td>
+          <td>Gaikwad</td>
+        </tr>
+        <tr>
+          <td colspan="3">This is a Footer</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
