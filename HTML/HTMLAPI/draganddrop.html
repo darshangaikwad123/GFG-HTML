@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #container {
+      width: 350px;
+      height: 350px;
+      padding: 10px;
+      border: 1px solid red;
+    }
+  </style>
+  <body>
+    <div id="container" 
+    ondragover=""></div>
+    <br />
+    <img
+      src="./../download.jpeg"
+      alt="not found"
+      id="myimage"
+      draggable="true"
+      width="250"
+      ondragstart="drag(event)"
+    />
+  </body>
+  <script>
+    function allowDrop(e) {
+      //alert(e);
+    }
+    function drag(e) {
+      e.dataTransfer.setData("myimagetotransfer", e.target.id);
+    }
+    function drop(e) {}
+  </script>
+</html>

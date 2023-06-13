@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    canvas {
+      border-radius: 5px;
+      background-color: white;
+    }
+  </style>
+  <body>
+    <canvas id="canvas" width="500" height="800"> </canvas>
+  </body>
+  <script>
+    const canvas = document.getElementById("canves");
+    const ctx = canves.getContext("2d");
+    canvas.width=window.innerWidth-100;
+
+    //smiley
+    ctx.beginPath()
+    ctx.arc(300,300,200,0,Math.PI*2);
+    ctx.fillStyle="yellow";
+    ctx.fill();
+    ctx.strokesStyle="black";
+    ctx.stroke();
+  </script>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+    }
+    canvas {
+      border-radius: 5px;
+      background-color: white;
+      width: 80%;
+      height: 80%;
+    }
+  </style>
+  <body>
+    <canvas id="canvas" width="500" height="500"> </canvas>
+  </body>
+  <script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = "pink";
+    ctx.fillRect(20, 20, 80, 30);
+    canvas.width = window.innerWidth;
+    // ctx.fillStyle='blue';
+    // ctx.fillRect(120,20,80,30)
+
+    //strokes
+    // ctx.lineWidth = 1;
+    // ctx.strokeStyle = "green";
+    // ctx.strokeRect(0, 20, 80, 30);
+
+    // ctx.lineWidth = 2;
+    // ctx.strokeStyle = "red";
+    // ctx.strokeRect(120, 20, 80, 30);
+
+    //clear
+    // ctx.clearRect(25,25,70,20);
+
+    // fill text
+    //    ctx.font='30px Arial'
+    //    ctx.fillStyle='purple'
+    //    ctx.fillText('may there',250,50)
+    //    ctx.strokeStyle='red'
+    //    ctx.strokeText("hello world",500,50)
+
+    // ctx.beginPath();
+    // ctx.moveTo(200, 150);
+    // ctx.lineTo(400, 150);
+    // ctx.lineTo(400, 250);
+    // ctx.lineTo(200, 250);
+    // ctx.lineTo(200, 150);
+
+    // ctx.linewidth = 5;
+    // ctx.strokeStyle = "red";
+    // ctx.stroke();
+    // ctx.fillStyle='blue';
+    // ctx.fill()
+
+    ctx.beginPath();
+    ctx.arc(600, 150, 70, pmaith , Math.PI * 2);
+    ctx.strokeStyle = "red";
+    ctx.fillStyle("red");
+    ctx.stroke();
+    ctx.fillStyle='blue'
+  </script>
+</html>
