@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      debugger;
+      const first = "apple";
+      const second = "kiwi";
+      const third = "watermelon";
+
+      const lenfirst = first.length;
+      const lensecond = second.length;
+      const lenthird = third.length;
+
+      if (lenfirst < lensecond && lenfirst < lenthird) {
+        console.log("First string is smallest");
+      } else if (lensecond < lenfirst && lensecond < lenthird) {
+        console.log("Second string is smallest");
+      } else {
+        console.log("Third string is smallest");
+      }
+    </script>
+  </body>
+</html>
